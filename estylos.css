@@ -1,0 +1,293 @@
+:root{
+    --main-c:#FFC300;
+    --black-c:#000;
+  }
+  
+  /** Estilos Generales **/
+  html{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:visited{
+    color: inherit;
+  }
+  li{
+    list-style: none;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  h1{
+    font-size: 2.4rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+  h4{
+    font-size: 1.6rem;
+  }
+  h5{
+    font-size: 1.4rem;
+  }
+  h6{
+    font-size: 1.2rem;
+  }
+  
+  /* Enlaces & Botones*/
+  
+  .cta-main{
+    background-color: var(--main-c);
+    padding: 1rem 1rem ;
+    color: #fff;
+    font-size: bold;
+    border-radius: 2px;
+  }
+  
+  /* Header Restaurante */
+  
+  header.main-header{
+    position: relative;    
+    top: 0;
+    width: 100%;
+    z-index:9999;
+  }
+  .header-wrap{
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    background-color: transparent;
+    z-index: 999;
+  }
+  .wrap-logo-header{
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+  }
+  .logo-header{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .nav-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-wrap-header{
+    display: flex;
+    flex-basis: 50%;
+  }
+  
+  ul.main-menu{
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  ul.main-menu #nav-main-contact{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: var(--main-c);
+    color: #fff;
+  }
+  li.menu-item{
+    margin: .75rem;
+    display: flex;
+  }
+  li.menu-item a{
+    padding: .5rem 1rem;
+    color: black;
+  }
+  li.menu-item a:hover{
+    color: var(--main-c);
+  }
+  
+  i.toggle-menu img{
+    width: 27px;
+    z-index: 99;
+  }
+  
+  i.toggle-menu{
+    display: none;
+    background-color: #fff;
+    border: none;
+    z-index: 9999;
+  }
+  
+  input#check{
+    display: none;
+  }
+  
+  @media (min-width:880px){
+    .header-wrap{
+      padding: .5rem 5rem;
+    }
+  }
+  
+  @media (min-width:768px){
+   a.logo-header{
+    color: black;
+   }
+  }
+  
+  @media (max-width:768px){
+    header.main-header{
+      margin-bottom: 4rem;
+    }
+    .header-wrap{
+      position: fixed;
+      width: 100%;
+      background-color: #fff;
+      padding: 0;
+      top: 0;
+      z-index: 9999;
+      height: 60px;
+    }
+    .wrap-logo-header{
+      position: fixed;
+      z-index:999;
+      top: 3%;
+      left: 3%;
+    }
+    .logo-header, li.menu-item a{
+      color: #222;
+    }
+  
+    i.toggle-menu{
+      display: flex;
+    }
+    ul.main-menu,#nav-main-contact{
+      display: none;
+      left: 0;
+      margin: 0;
+      padding: 0;
+    }
+    ul.main-menu{
+      position: fixed;
+      background-color: #fff;
+    }
+    label.checkbtn{
+      position: fixed;
+      right: 3%;
+      top: 3%;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    #check:checked ~ ul{
+      display: flex;
+      z-index: 9;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      top: 0;
+      font-size: 2rem;
+    }
+  }
+
+/*formulario*/
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    color: #283629;
+    font-size: 35px;
+}
+
+label{
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+
+input ::placeholder, textarea::placeholder{
+color: #b5cab6;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a{
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51D94C;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #50E048;
+}
+
+@media(max-width:768px){
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+
+    }
+}
