@@ -490,7 +490,7 @@ element-footer h5 {
     }
 }
 
-@media(max-width:48p0x) {
+@media(max-width:480px) {
     .wrap-footer {
         grid-template-columns: repeat(1, 1fr);
     }
