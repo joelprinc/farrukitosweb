@@ -166,7 +166,7 @@
       left: 3%;
     }
     .logo-header, li.menu-item a{
-      color: #222;
+      color: #fff;
     }
   
     i.toggle-menu{
@@ -180,7 +180,7 @@
     }
     ul.main-menu{
       position: fixed;
-      background-color: #fff;
+      background-color: #222;
     }
     label.checkbtn{
       position: fixed;
