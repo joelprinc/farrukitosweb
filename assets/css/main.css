@@ -144,7 +144,7 @@ li.menu-item a {
 }
 
 li.menu-item a:hover {
-    color: #222;
+    color: #ffc360;
 }
 
 i.toggle-menu img {
@@ -197,7 +197,7 @@ input#check {
     }
     .logo-header,
     li.menu-item a {
-        color: #222;
+        color: #fff;
     }
     i.toggle-menu {
         display: flex;
@@ -211,7 +211,7 @@ input#check {
     }
     ul.main-menu {
         position: fixed;
-        background-color: #fff;
+        background-color: #222;
     }
     label.checkbtn {
         position: fixed;
