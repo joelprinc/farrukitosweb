@@ -10,7 +10,7 @@
   body{
     margin: 0;
     padding: 0;
-    background-color: #c7c8ca;
+    background-color: #222;
   }
   a{
     text-decoration: none;
@@ -63,6 +63,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    ;
 }
 
 .header-wrap {
@@ -116,6 +117,7 @@ ul.main-menu #nav-main-contact {
   padding: .5rem 1rem;
   background-color: var(--main-c);
   color: #fff;
+  border-radius: 10px;
 }
 
 li.menu-item {
@@ -125,7 +127,7 @@ li.menu-item {
 
 li.menu-item a {
   padding: .5rem 1rem;
-  color: #222;
+  color: #fff;
 }
 
 li.menu-item a:hover {
@@ -135,6 +137,10 @@ li.menu-item a:hover {
 i.toggle-menu img {
   width: 27px;
   z-index: 99;
+}
+
+.wrap-title-section{
+  color: #fff;
 }
 
 i.toggle-menu {
@@ -157,7 +163,7 @@ input#check {
 
 @media (min-width:768px) {
   a.logo-header {
-      color: #222;
+      color: #fff;
   }
 }
 
@@ -278,6 +284,7 @@ input#check {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
+  border-radius: 10px;
 }
 
 .tarjeta-rest img {

@@ -131,6 +131,7 @@ ul.main-menu #nav-main-contact {
     padding: .5rem 1rem;
     background-color: var(--main-c);
     color: #fff;
+    border-radius: 10pxs;
 }
 
 li.menu-item {

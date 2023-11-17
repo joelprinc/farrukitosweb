@@ -108,6 +108,7 @@
     padding: .5rem 1rem;
     background-color: var(--main-c);
     color: #fff;
+    border-radius: 10px;
   }
   li.menu-item{
     margin: .75rem;
@@ -209,12 +210,13 @@
 
 * {
   box-sizing: border-box;
+  /*border-radius: 10px;*/
 }
 
 body {
   background: #181818;
   color: #fff;
-  line-height: 1.6;
+ /* line-height: 1.6;*/
   padding: 0 1.5em;
 }
 
